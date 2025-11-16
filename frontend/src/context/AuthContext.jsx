@@ -2,7 +2,8 @@ import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
 const AuthContext = createContext();
-const API_URL = 'http://localhost:3001/api/auth';
+// const API_URL = 'http://localhost:3001/api/auth';
+const API_URL = 'https://resignation-managment-backend.vercel.app';
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
